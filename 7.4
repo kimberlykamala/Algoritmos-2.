@@ -1,0 +1,22 @@
+// 7.4.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+void imprimirPotencias(int y, int n)
+{
+	for (int i = 1; i <= n; i++)
+	{
+		cout << endl << y*i;
+	}
+}
+
+void main()
+{
+	imprimirPotencias(1,12);
+	getch();
+}
