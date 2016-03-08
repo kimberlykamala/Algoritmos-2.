@@ -1,0 +1,22 @@
+// 7.5.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+void imprimirEstrellas(int n)
+{
+	for (int i = 1; i <= n; i++)
+	{
+		cout << "   *";
+	}
+}
+
+void main()
+{
+	imprimirEstrellas(12);
+	getch();
+}
