@@ -1,0 +1,30 @@
+// 7.3.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+#include "VOLUMEN.h"
+
+using namespace std;
+
+void main()
+{float r,h;
+cout<<"Ingrese el radio: "<<endl;
+cin>>r;
+cout<<"Ingrese la altura: "<<endl;
+cin>>h;
+cout<<"El volumen del cilindro es: "<<VolCilindro(h,r);
+getch();
+}
+
+
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+
+float VolCilindro(float h,float r)
+{
+	float k;
+	k=3.1415*r*r*h;
+	return k;
+}
