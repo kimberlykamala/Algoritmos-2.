@@ -1,0 +1,29 @@
+
+// 7.6.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+string invertir(string a)
+{
+	string aux;
+	for (int i = a.length(); i >= 0; i--)
+	{
+		aux += a[i];
+	}
+	return aux;
+}
+
+void main()
+{
+	string palabra;
+	cout<<"Ingrese la palabra";
+	cin>>palabra;
+	invertir(palabra);
+	getch();
+}
+
