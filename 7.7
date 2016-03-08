@@ -1,0 +1,22 @@
+// 7.7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+void ordenar2(int &a, int &b)
+{
+	if (a > b)
+		swap(a, b);
+	
+}
+void main()
+{
+	int u=2,w=4,v=3,x=1;
+	ordenar2(u,x);
+	cout<<u<<w<<v<<x;
+	getch();
+}
